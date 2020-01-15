@@ -131,10 +131,10 @@ class EnvyTest extends TestCase
     {
         $envy = $this->createEnvy();
 
-        Assert::equal(3.1415, $envy->getFloat('VAR_FLOAT'));
-        Assert::equal(3.1415, $envy->getFloatOrNull('VAR_FLOAT'));
+        Assert::equal(3.141_5, $envy->getFloat('VAR_FLOAT'));
+        Assert::equal(3.141_5, $envy->getFloatOrNull('VAR_FLOAT'));
 
-        Assert::equal(8.314472, $envy->getFloat('VAR_UNKNOWN', 8.314472));
+        Assert::equal(8.314_472, $envy->getFloat('VAR_UNKNOWN', 8.314_472));
         Assert::same(null, $envy->getFloatOrNull('VAR_UNKNOWN'));
 
         Assert::exception(
@@ -221,8 +221,8 @@ class EnvyTest extends TestCase
         $envy = $this->createEnvy();
 
         Assert::same([], $envy->getFloatArray('VAR_EMPTY'));
-        Assert::equal([-1.0, 2.71828, 3.1415], $envy->getFloatArray('VAR_FLOAT_ARRAY'));
-        Assert::equal([-1.0, 2.71828, 3.1415], $envy->getFloatArrayOrNull('VAR_FLOAT_ARRAY'));
+        Assert::equal([-1.0, 2.718_28, 3.141_5], $envy->getFloatArray('VAR_FLOAT_ARRAY'));
+        Assert::equal([-1.0, 2.718_28, 3.141_5], $envy->getFloatArrayOrNull('VAR_FLOAT_ARRAY'));
 
         Assert::equal([4.2, 2.4], $envy->getFloatArray('VAR_UNKNOWN', [4.2, 2.4]));
         Assert::same(null, $envy->getFloatArrayOrNull('VAR_UNKNOWN'));

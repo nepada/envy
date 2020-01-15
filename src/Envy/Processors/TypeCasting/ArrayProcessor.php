@@ -23,14 +23,8 @@ final class ArrayProcessor implements ProcessorInterface
 
     private MultiProcessor $itemProcessor;
 
-    /**
-     * @param string $delimiter
-     * @param ProcessorInterface ...$processors
-     * phpcs:disable SlevomatCodingStandard.Functions.UselessParameterDefaultValue.UselessParameterDefaultValue
-     */
     public function __construct(string $delimiter = self::DEFAULT_DELIMITER, ProcessorInterface ...$processors)
     {
-		// phpcs:enable
         $this->delimiter = $delimiter;
         $this->itemProcessor = new MultiProcessor(...$processors);
     }
@@ -71,9 +65,7 @@ final class ArrayProcessor implements ProcessorInterface
         Validators::assert($value, 'string', $name);
 
         return array_map(
-            function (string $itemValue) use ($name) {
-                return $this->itemProcessor->process("item of $name", new SingleValueProvider($itemValue));
-            },
+            fn (string $itemValue) => $this->itemProcessor->process("item of $name", new SingleValueProvider($itemValue)),
             Strings::split($value, $this->delimiter),
         );
     }

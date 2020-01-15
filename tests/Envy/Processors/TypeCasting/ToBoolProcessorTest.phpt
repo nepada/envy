@@ -101,7 +101,7 @@ class ToBoolProcessorTest extends TestCase
             ['input' => ''],
             ['input' => 'bflmpsvz'],
             ['input' => 42],
-            ['input' => 3.1415],
+            ['input' => 3.141_5],
             ['input' => null],
         ];
     }

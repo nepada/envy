@@ -35,8 +35,8 @@ class ToFloatProcessorTest extends TestCase
     {
         return [
             [
-                'input' => 3.1415,
-                'output' => 3.1415,
+                'input' => 3.141_5,
+                'output' => 3.141_5,
             ],
             [
                 'input' => 42,
