@@ -1,15 +1,16 @@
 Envy
 ====
 
-[![Build Status](https://travis-ci.org/damejidlo/envy.svg?branch=master)](https://travis-ci.org/damejidlo/envy)
-[![Downloads this Month](https://img.shields.io/packagist/dm/damejidlo/envy.svg)](https://packagist.org/packages/damejidlo/envy)
-[![Latest stable](https://img.shields.io/packagist/v/damejidlo/envy.svg)](https://packagist.org/packages/damejidlo/envy)
+[![Build Status](https://travis-ci.org/nepada/envy.svg?branch=master)](https://travis-ci.org/nepada/envy)
+[![Coverage Status](https://coveralls.io/repos/github/nepada/envy/badge.svg?branch=master)](https://coveralls.io/github/nepada/envy?branch=master)
+[![Downloads this Month](https://img.shields.io/packagist/dm/nepada/envy.svg)](https://packagist.org/packages/nepada/envy)
+[![Latest stable](https://img.shields.io/packagist/v/nepada/envy.svg)](https://packagist.org/packages/nepada/envy)
 
 
 ## Installation
 
 ```sh
-$ composer require damejidlo/envy
+$ composer require nepada/envy
 ```
 
 
@@ -18,9 +19,9 @@ $ composer require damejidlo/envy
 Create `Envy instance`:
 
 ```php
-use Damejidlo\Envy\Envy;
-use Damejidlo\Envy\LoaderFactory;
-use Damejidlo\Envy\ValueProviders\Reader;
+use Nepada\Envy\Envy;
+use Nepada\Envy\LoaderFactory;
+use Nepada\Envy\ValueProviders\Reader;
 
 $reader = new Reader();
 $loaderFactory = new LoaderFactory($reader);
@@ -120,7 +121,7 @@ Register the extension in your configuration, this will register the necessary s
 
 ```yaml
 extensions:
-    envy: Damejidlo\Envy\DI\EnvyExtension
+    envy: Nepada\Envy\DI\EnvyExtension
 ```
 
 
@@ -145,8 +146,8 @@ services:
 You can create your own loaders with completely customizable processing of loaded values, e.g.:
 
 ```php
-use Damejidlo\Envy\LoaderFactory;
-use Damejidlo\Envy\ValueProviders\Reader;
+use Nepada\Envy\LoaderFactory;
+use Nepada\Envy\ValueProviders\Reader;
 
 $reader = new Reader();
 $loaderFactory = new LoaderFactory($reader);
