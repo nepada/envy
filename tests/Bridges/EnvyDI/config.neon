@@ -1,5 +1,5 @@
 extensions:
-	envy: Nepada\Envy\DI\EnvyExtension
+	envy: Nepada\Bridges\EnvyDI\EnvyExtension
 
 parameters:
 	env:

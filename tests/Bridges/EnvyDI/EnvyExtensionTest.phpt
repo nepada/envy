@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace NepadaTests\Envy\DI;
+namespace NepadaTests\Bridges\EnvyDI;
 
 require_once __DIR__ . '/../../bootstrap.php';
 

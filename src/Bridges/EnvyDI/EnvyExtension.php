@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace Nepada\Envy\DI;
+namespace Nepada\Bridges\EnvyDI;
 
 use Nepada\Envy\Envy;
 use Nepada\Envy\LoaderFactory;

@@ -121,7 +121,7 @@ Register the extension in your configuration, this will register the necessary s
 
 ```yaml
 extensions:
-    envy: Nepada\Envy\DI\EnvyExtension
+    envy: Nepada\Bridges\EnvyDI\EnvyExtension
 ```
 
 
