@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace Damejidlo\Envy\Processors\TypeCasting;
+namespace Nepada\Envy\Processors\TypeCasting;
 
-use Damejidlo\Envy\ProcessorInterface;
-use Damejidlo\Envy\Processors\MultiProcessor;
-use Damejidlo\Envy\Processors\ValidatorProcessor;
-use Damejidlo\Envy\ValueProviderInterface;
-use Damejidlo\Envy\ValueProviders\SingleValueProvider;
+use Nepada\Envy\ProcessorInterface;
+use Nepada\Envy\Processors\MultiProcessor;
+use Nepada\Envy\Processors\ValidatorProcessor;
+use Nepada\Envy\ValueProviderInterface;
+use Nepada\Envy\ValueProviders\SingleValueProvider;
 use Nette\SmartObject;
 use Nette\Utils\Strings;
 use Nette\Utils\Validators;

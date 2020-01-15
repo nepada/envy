@@ -1,15 +1,15 @@
 <?php
 declare(strict_types = 1);
 
-namespace DamejidloTests\Envy\Processors;
+namespace NepadaTests\Envy\Processors;
 
 require_once __DIR__ . '/../bootstrap.php';
 
-use Damejidlo\Envy\Processors\FallbackProcessor;
-use Damejidlo\Envy\ValueProviders\SingleValueProvider;
-use DamejidloTests\Envy\Fixtures\FailingValueProvider;
-use DamejidloTests\Envy\Fixtures\TestException;
-use DamejidloTests\Envy\TestCase;
+use Nepada\Envy\Processors\FallbackProcessor;
+use Nepada\Envy\ValueProviders\SingleValueProvider;
+use NepadaTests\Envy\Fixtures\FailingValueProvider;
+use NepadaTests\Envy\Fixtures\TestException;
+use NepadaTests\Envy\TestCase;
 use Tester\Assert;
 
 

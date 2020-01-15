@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace DamejidloTests\Envy\Fixtures;
+namespace NepadaTests\Envy\Fixtures;
 
-use Damejidlo\Envy\ProcessorInterface;
-use Damejidlo\Envy\ValueProviderInterface;
+use Nepada\Envy\ProcessorInterface;
+use Nepada\Envy\ValueProviderInterface;
 use Nette\SmartObject;
 use Nette\Utils\Validators;
 

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace Damejidlo\Envy;
+namespace Nepada\Envy;
 
-use Damejidlo\Envy\ValueProviders\Reader;
+use Nepada\Envy\ValueProviders\Reader;
 use Nette\SmartObject;
 
 

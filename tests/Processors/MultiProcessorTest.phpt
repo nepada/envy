@@ -1,18 +1,18 @@
 <?php
 declare(strict_types = 1);
 
-namespace DamejidloTests\Envy\Processors;
+namespace NepadaTests\Envy\Processors;
 
 require_once __DIR__ . '/../bootstrap.php';
 
-use Damejidlo\Envy\EnvironmentVariableNotFoundException;
-use Damejidlo\Envy\Processors\MultiProcessor;
-use Damejidlo\Envy\Processors\ValidatorProcessor;
-use Damejidlo\Envy\ValueProviderInterface;
-use Damejidlo\Envy\ValueProviders\SingleValueProvider;
-use DamejidloTests\Envy\Fixtures\FailingValueProvider;
-use DamejidloTests\Envy\Fixtures\IncrementProcessor;
-use DamejidloTests\Envy\TestCase;
+use Nepada\Envy\EnvironmentVariableNotFoundException;
+use Nepada\Envy\Processors\MultiProcessor;
+use Nepada\Envy\Processors\ValidatorProcessor;
+use Nepada\Envy\ValueProviderInterface;
+use Nepada\Envy\ValueProviders\SingleValueProvider;
+use NepadaTests\Envy\Fixtures\FailingValueProvider;
+use NepadaTests\Envy\Fixtures\IncrementProcessor;
+use NepadaTests\Envy\TestCase;
 use Nette\Utils\AssertionException;
 use Tester\Assert;
 

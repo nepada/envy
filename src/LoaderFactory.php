@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace Damejidlo\Envy;
+namespace Nepada\Envy;
 
-use Damejidlo\Envy\Processors\TypeCasting\ArrayProcessor;
-use Damejidlo\Envy\Processors\TypeCasting\ToBoolProcessor;
-use Damejidlo\Envy\Processors\TypeCasting\ToFloatProcessor;
-use Damejidlo\Envy\Processors\TypeCasting\ToIntProcessor;
-use Damejidlo\Envy\ValueProviders\Loader;
-use Damejidlo\Envy\ValueProviders\Reader;
+use Nepada\Envy\Processors\TypeCasting\ArrayProcessor;
+use Nepada\Envy\Processors\TypeCasting\ToBoolProcessor;
+use Nepada\Envy\Processors\TypeCasting\ToFloatProcessor;
+use Nepada\Envy\Processors\TypeCasting\ToIntProcessor;
+use Nepada\Envy\ValueProviders\Loader;
+use Nepada\Envy\ValueProviders\Reader;
 use Nette\SmartObject;
 
 

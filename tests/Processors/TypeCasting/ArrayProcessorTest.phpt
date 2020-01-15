@@ -1,15 +1,15 @@
 <?php
 declare(strict_types = 1);
 
-namespace DamejidloTests\Envy\Processors\TypeCasting;
+namespace NepadaTests\Envy\Processors\TypeCasting;
 
 require_once __DIR__ . '/../../bootstrap.php';
 
-use Damejidlo\Envy\Processors\TypeCasting\ArrayProcessor;
-use Damejidlo\Envy\Processors\TypeCasting\ToIntProcessor;
-use Damejidlo\Envy\ValueProviders\SingleValueProvider;
-use DamejidloTests\Envy\Fixtures\IncrementProcessor;
-use DamejidloTests\Envy\TestCase;
+use Nepada\Envy\Processors\TypeCasting\ArrayProcessor;
+use Nepada\Envy\Processors\TypeCasting\ToIntProcessor;
+use Nepada\Envy\ValueProviders\SingleValueProvider;
+use NepadaTests\Envy\Fixtures\IncrementProcessor;
+use NepadaTests\Envy\TestCase;
 use Nette\Utils\AssertionException;
 use Tester\Assert;
 

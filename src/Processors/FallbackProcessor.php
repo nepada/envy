@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace Damejidlo\Envy\Processors;
+namespace Nepada\Envy\Processors;
 
-use Damejidlo\Envy\EnvironmentVariableNotFoundException;
-use Damejidlo\Envy\ProcessorInterface;
-use Damejidlo\Envy\ValueProviderInterface;
+use Nepada\Envy\EnvironmentVariableNotFoundException;
+use Nepada\Envy\ProcessorInterface;
+use Nepada\Envy\ValueProviderInterface;
 use Nette\SmartObject;
 
 

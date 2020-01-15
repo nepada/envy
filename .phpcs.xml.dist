@@ -26,8 +26,8 @@
 	<rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
 		<properties>
 			<property name="rootNamespaces" type="array">
-				<element key="src" value="Damejidlo\Envy"/>
-				<element key="tests" value="DamejidloTests\Envy"/>
+				<element key="src" value="Nepada\Envy"/>
+				<element key="tests" value="NepadaTests\Envy"/>
 			</property>
 			<property name="extensions" type="array">
 				<element value="php"/>

@@ -24,12 +24,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Damejidlo\\Envy\\": "src/"
+			"Nepada\\Envy\\": "src/"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"DamejidloTests\\Envy\\": "tests/"
+			"NepadaTests\\Envy\\": "tests/"
 		}
 	}
 }

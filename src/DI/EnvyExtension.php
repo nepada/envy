@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace Damejidlo\Envy\DI;
+namespace Nepada\Envy\DI;
 
-use Damejidlo\Envy\Envy;
-use Damejidlo\Envy\LoaderFactory;
-use Damejidlo\Envy\ValueProviders\Reader;
+use Nepada\Envy\Envy;
+use Nepada\Envy\LoaderFactory;
+use Nepada\Envy\ValueProviders\Reader;
 use Nette\DI\CompilerExtension;
 
 

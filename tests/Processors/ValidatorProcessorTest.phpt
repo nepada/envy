@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace DamejidloTests\Envy\Processors;
+namespace NepadaTests\Envy\Processors;
 
 require_once __DIR__ . '/../bootstrap.php';
 
-use Damejidlo\Envy\Processors\ValidatorProcessor;
-use Damejidlo\Envy\ValueProviders\SingleValueProvider;
-use DamejidloTests\Envy\TestCase;
+use Nepada\Envy\Processors\ValidatorProcessor;
+use Nepada\Envy\ValueProviders\SingleValueProvider;
+use NepadaTests\Envy\TestCase;
 use Nette\Utils\AssertionException;
 use Tester\Assert;
 

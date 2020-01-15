@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace Damejidlo\Envy;
+namespace Nepada\Envy;
 
 class EnvironmentVariableNotFoundException extends \InvalidArgumentException
 {

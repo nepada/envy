@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace DamejidloTests\Envy\DI;
+namespace NepadaTests\Envy\DI;
 
 require_once __DIR__ . '/../bootstrap.php';
 
-use Damejidlo\Envy\Envy;
-use Damejidlo\Envy\LoaderFactory;
-use Damejidlo\Envy\ValueProviders\Reader;
-use DamejidloTests\Envy\TestCase;
+use Nepada\Envy\Envy;
+use Nepada\Envy\LoaderFactory;
+use Nepada\Envy\ValueProviders\Reader;
+use NepadaTests\Envy\TestCase;
 use Nette\Configurator;
 use Nette\DI\Container;
 use Tester\Assert;

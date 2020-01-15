@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace Damejidlo\Envy\Processors\TypeCasting;
+namespace Nepada\Envy\Processors\TypeCasting;
 
-use Damejidlo\Envy\ProcessorInterface;
-use Damejidlo\Envy\ValueProviderInterface;
+use Nepada\Envy\ProcessorInterface;
+use Nepada\Envy\ValueProviderInterface;
 use Nette\SmartObject;
 use Nette\Utils\AssertionException;
 use Nette\Utils\Strings;

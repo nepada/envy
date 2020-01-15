@@ -1,5 +1,5 @@
 extensions:
-	envy: Damejidlo\Envy\DI\EnvyExtension
+	envy: Nepada\Envy\DI\EnvyExtension
 
 parameters:
 	env:

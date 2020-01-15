@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace DamejidloTests\Envy\Fixtures;
+namespace NepadaTests\Envy\Fixtures;
 
 class TestException extends \Exception
 {

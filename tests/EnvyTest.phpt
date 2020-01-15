@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace DamejidloTests\Envy;
+namespace NepadaTests\Envy;
 
 require_once __DIR__ . '/bootstrap.php';
 
-use Damejidlo\Envy\EnvironmentVariableNotFoundException;
-use Damejidlo\Envy\Envy;
-use Damejidlo\Envy\LoaderFactory;
-use Damejidlo\Envy\ValueProviders\Reader;
+use Nepada\Envy\EnvironmentVariableNotFoundException;
+use Nepada\Envy\Envy;
+use Nepada\Envy\LoaderFactory;
+use Nepada\Envy\ValueProviders\Reader;
 use Nette\Utils\AssertionException;
 use Tester\Assert;
 

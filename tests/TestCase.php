@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace DamejidloTests\Envy;
+namespace NepadaTests\Envy;
 
 use Tester;
 

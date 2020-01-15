@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace DamejidloTests\Envy\Processors\TypeCasting;
+namespace NepadaTests\Envy\Processors\TypeCasting;
 
 require_once __DIR__ . '/../../bootstrap.php';
 
-use Damejidlo\Envy\Processors\TypeCasting\ToBoolProcessor;
-use Damejidlo\Envy\ValueProviders\SingleValueProvider;
-use DamejidloTests\Envy\TestCase;
+use Nepada\Envy\Processors\TypeCasting\ToBoolProcessor;
+use Nepada\Envy\ValueProviders\SingleValueProvider;
+use NepadaTests\Envy\TestCase;
 use Nette\Utils\AssertionException;
 use Tester\Assert;
 
