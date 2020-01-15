@@ -15,7 +15,7 @@
     <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
         <properties>
             <property name="rootNamespaces" type="array">
-                <element key="src" value="Nepada\Envy"/>
+                <element key="src" value="Nepada"/>
                 <element key="tests" value="NepadaTests"/>
             </property>
             <property name="extensions" type="array">
