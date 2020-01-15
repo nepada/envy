@@ -43,5 +43,10 @@
         "psr-4": {
             "NepadaTests\\": "tests/"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.1-dev"
+        }
     }
 }
