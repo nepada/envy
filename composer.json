@@ -1,5 +1,5 @@
 {
-	"name": "damejidlo/envy",
+	"name": "nepada/envy",
 	"type": "library",
 	"license": "BSD-3-Clause",
 	"description": "Helpers for extracting, validating and type-casting data from environment variables",
