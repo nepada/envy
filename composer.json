@@ -16,10 +16,10 @@
 	],
 	"require": {
 		"php": ">=7.3",
-		"nette/utils": "^2.5@dev || ^3.0@dev"
+		"nette/utils": "^2.5.4@dev || ^3.0@dev"
 	},
 	"require-dev": {
-		"nette/di": "^2.4.10@dev || ^3.0.1@dev",
+		"nette/di": "^2.4.16@dev || ^3.0.1@dev",
 		"nette/bootstrap": "^2.4.6 || ^3.0",
 		"damejidlo/coding-standard": "^1.1",
 		"damejidlo/phpstan-nette-tester": "^0.1.0",
