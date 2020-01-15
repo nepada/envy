@@ -16,15 +16,15 @@
     ],
     "require": {
         "php": ">=7.3",
-        "nette/utils": "^2.5.4@dev || ^3.0@dev"
+        "nette/utils": "^3.0@dev"
     },
     "require-dev": {
-        "nette/di": "^2.4.16@dev || ^3.0.1@dev",
-        "nette/bootstrap": "^2.4.6 || ^3.0",
+        "nette/di": "^3.0.1@dev",
+        "nette/bootstrap": "^3.0",
         "jakub-onderka/php-parallel-lint": "^1.0",
         "nepada/coding-standard": "^6.3.0",
         "nepada/phpstan-nette-tester": "^0.3.0",
-        "nette/tester": "^2.3",
+        "nette/tester": "^2.3.1",
         "pepakriz/phpstan-exception-rules": "^0.10.1",
         "phpstan/phpstan": "^0.12.5",
         "phpstan/phpstan-nette": "^0.12.3",
