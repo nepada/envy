@@ -3,6 +3,17 @@
 	"type": "library",
 	"license": "BSD-3-Clause",
 	"description": "Helpers for extracting, validating and type-casting data from environment variables",
+	"keywords": ["nette", "env", "configuration"],
+	"support": {
+		"email": "petr@pada.cz",
+		"issues": "https://github.com/nepada/envy/issues"
+	},
+	"authors": [
+		{
+			"name": "Petr Morávek",
+			"email": "petr@pada.cz"
+		}
+	],
 	"require": {
 		"php": ">=7.3",
 		"nette/utils": "^2.5@dev || ^3.0@dev"
