@@ -11,11 +11,9 @@ final class Envy
 
     use SmartObject;
 
-    /** @var Reader */
-    private $reader;
+    private Reader $reader;
 
-    /** @var LoaderFactory */
-    private $loaderFactory;
+    private LoaderFactory $loaderFactory;
 
     public function __construct(Reader $reader, LoaderFactory $loaderFactory)
     {

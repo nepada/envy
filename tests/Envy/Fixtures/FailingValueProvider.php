@@ -12,8 +12,7 @@ final class FailingValueProvider implements ValueProviderInterface
 
     use SmartObject;
 
-    /** @var \Throwable|NULL */
-    private $failureException;
+    private ?\Throwable $failureException = null;
 
     public function __construct(?\Throwable $failureException = null)
     {

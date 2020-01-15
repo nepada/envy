@@ -15,11 +15,9 @@ final class Loader implements ValueProviderInterface
 
     use SmartObject;
 
-    /** @var ValueProviderInterface */
-    private $valueProvider;
+    private ValueProviderInterface $valueProvider;
 
-    /** @var MultiProcessor */
-    private $processor;
+    private MultiProcessor $processor;
 
     public function __construct(ValueProviderInterface $valueProvider, ProcessorInterface ...$processors)
     {

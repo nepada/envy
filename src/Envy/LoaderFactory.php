@@ -16,8 +16,7 @@ final class LoaderFactory
 
     use SmartObject;
 
-    /** @var Reader */
-    private $reader;
+    private Reader $reader;
 
     public function __construct(Reader $reader)
     {

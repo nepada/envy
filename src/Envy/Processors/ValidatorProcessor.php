@@ -13,8 +13,7 @@ final class ValidatorProcessor implements ProcessorInterface
 
     use SmartObject;
 
-    /** @var string */
-    private $type;
+    private string $type;
 
     public function __construct(string $type)
     {

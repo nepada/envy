@@ -19,11 +19,9 @@ final class ArrayProcessor implements ProcessorInterface
 
     public const DEFAULT_DELIMITER = '~\s*,\s*~';
 
-    /** @var string */
-    private $delimiter;
+    private string $delimiter;
 
-    /** @var MultiProcessor */
-    private $itemProcessor;
+    private MultiProcessor $itemProcessor;
 
     /**
      * @param string $delimiter
