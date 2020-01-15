@@ -6,6 +6,8 @@ Envy
 [![Downloads this Month](https://img.shields.io/packagist/dm/nepada/envy.svg)](https://packagist.org/packages/nepada/envy)
 [![Latest stable](https://img.shields.io/packagist/v/nepada/envy.svg)](https://packagist.org/packages/nepada/envy)
 
+This package was originally developed and published under [damejidlo organization](https://github.com/damejidlo).
+
 
 ## Installation
 
