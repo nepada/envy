@@ -10,41 +10,37 @@ use Nette\Utils\AssertionException;
 use Nette\Utils\Strings;
 use Nette\Utils\Validators;
 
-
-
 final class ToBoolProcessor implements ProcessorInterface
 {
 
-	use SmartObject;
+    use SmartObject;
 
-	private const BOOLEAN_REPRESENTATION = [
-		'true' => TRUE,
-		'false' => FALSE,
-		'1' => TRUE,
-		'0' => FALSE,
-		'yes' => TRUE,
-		'no' => FALSE,
-	];
+    private const BOOLEAN_REPRESENTATION = [
+        'true' => true,
+        'false' => false,
+        '1' => true,
+        '0' => false,
+        'yes' => true,
+        'no' => false,
+    ];
 
+    public function process(string $name, ValueProviderInterface $valueProvider): bool
+    {
+        $value = $valueProvider->get($name);
 
+        if (is_bool($value)) {
+            return $value;
+        }
 
-	public function process(string $name, ValueProviderInterface $valueProvider) : bool
-	{
-		$value = $valueProvider->get($name);
+        Validators::assert($value, 'string', $name);
 
-		if (is_bool($value)) {
-			return $value;
-		}
+        $lowerCaseValue = Strings::lower($value);
+        if (array_key_exists($lowerCaseValue, self::BOOLEAN_REPRESENTATION)) {
+            return self::BOOLEAN_REPRESENTATION[$lowerCaseValue];
+        }
 
-		Validators::assert($value, 'string', $name);
-
-		$lowerCaseValue = Strings::lower($value);
-		if (array_key_exists($lowerCaseValue, self::BOOLEAN_REPRESENTATION)) {
-			return self::BOOLEAN_REPRESENTATION[$lowerCaseValue];
-		}
-
-		$booleanValues = "'" . implode("', '", array_keys(self::BOOLEAN_REPRESENTATION)) . "'";
-		throw new AssertionException("The $name expects to be one of $booleanValues, but got '$value'.");
-	}
+        $booleanValues = "'" . implode("', '", array_keys(self::BOOLEAN_REPRESENTATION)) . "'";
+        throw new AssertionException("The $name expects to be one of $booleanValues, but got '$value'.");
+    }
 
 }

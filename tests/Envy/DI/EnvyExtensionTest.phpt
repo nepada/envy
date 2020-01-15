@@ -13,58 +13,50 @@ use Nette\Configurator;
 use Nette\DI\Container;
 use Tester\Assert;
 
-
-
 /**
  * @testCase
  */
 class EnvyExtensionTest extends TestCase
 {
 
-	protected function setUp() : void
-	{
-		parent::setUp();
-		putenv('FOO=foo');
-	}
+    protected function setUp(): void
+    {
+        parent::setUp();
+        putenv('FOO=foo');
+    }
 
+    public function testServices(): void
+    {
+        $container = $this->createContainer();
 
+        Assert::type(Envy::class, $container->getService('envy'));
+        Assert::type(Envy::class, $container->getService('envy.envy'));
+        Assert::type(Reader::class, $container->getService('envy.reader'));
+        Assert::type(LoaderFactory::class, $container->getService('envy.loaderFactory'));
+    }
 
-	public function testServices() : void
-	{
-		$container = $this->createContainer();
+    public function testParameters(): void
+    {
+        $container = $this->createContainer();
+        Assert::same(
+            [
+                'foo' => 'foo',
+                'bar' => 'default',
+                'baz' => null,
+            ],
+            (array) $container->getService('env'),
+        );
+    }
 
-		Assert::type(Envy::class, $container->getService('envy'));
-		Assert::type(Envy::class, $container->getService('envy.envy'));
-		Assert::type(Reader::class, $container->getService('envy.reader'));
-		Assert::type(LoaderFactory::class, $container->getService('envy.loaderFactory'));
-	}
+    private function createContainer(): Container
+    {
+        $configurator = new Configurator();
+        $configurator->setDebugMode(false);
+        $configurator->setTempDirectory(TEMP_DIR);
+        $configurator->addConfig(__DIR__ . '/config.neon');
 
-
-
-	public function testParameters() : void
-	{
-		$container = $this->createContainer();
-		Assert::same(
-			[
-				'foo' => 'foo',
-				'bar' => 'default',
-				'baz' => NULL,
-			],
-			(array) $container->getService('env'),
-		);
-	}
-
-
-
-	private function createContainer() : Container
-	{
-		$configurator = new Configurator();
-		$configurator->setDebugMode(FALSE);
-		$configurator->setTempDirectory(TEMP_DIR);
-		$configurator->addConfig(__DIR__ . '/config.neon');
-
-		return $configurator->createContainer();
-	}
+        return $configurator->createContainer();
+    }
 
 }
 

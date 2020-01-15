@@ -8,20 +8,16 @@ use Nepada\Envy\ValueProviderInterface;
 use Nette\SmartObject;
 use Nette\Utils\Validators;
 
-
-
 final class ToIntProcessor implements ProcessorInterface
 {
 
-	use SmartObject;
+    use SmartObject;
 
-
-
-	public function process(string $name, ValueProviderInterface $valueProvider) : int
-	{
-		$value = $valueProvider->get($name);
-		Validators::assert($value, 'numericint', $name);
-		return (int) $value;
-	}
+    public function process(string $name, ValueProviderInterface $valueProvider): int
+    {
+        $value = $valueProvider->get($name);
+        Validators::assert($value, 'numericint', $name);
+        return (int) $value;
+    }
 
 }

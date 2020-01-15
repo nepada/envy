@@ -11,72 +11,52 @@ use Nepada\Envy\ValueProviders\Loader;
 use Nepada\Envy\ValueProviders\Reader;
 use Nette\SmartObject;
 
-
-
 final class LoaderFactory
 {
 
-	use SmartObject;
+    use SmartObject;
 
-	/**
-	 * @var Reader
-	 */
-	private $reader;
+    /** @var Reader */
+    private $reader;
 
+    public function __construct(Reader $reader)
+    {
+        $this->reader = $reader;
+    }
 
+    public function create(ProcessorInterface ...$processors): Loader
+    {
+        return new Loader($this->reader, ...$processors);
+    }
 
-	public function __construct(Reader $reader)
-	{
-		$this->reader = $reader;
-	}
+    public function createBoolLoader(): Loader
+    {
+        return $this->create(new ToBoolProcessor());
+    }
 
+    public function createIntLoader(): Loader
+    {
+        return $this->create(new ToIntProcessor());
+    }
 
+    public function createFloatLoader(): Loader
+    {
+        return $this->create(new ToFloatProcessor());
+    }
 
-	public function create(ProcessorInterface ...$processors) : Loader
-	{
-		return new Loader($this->reader, ...$processors);
-	}
+    public function createArrayLoader(string $delimiter = ArrayProcessor::DEFAULT_DELIMITER): Loader
+    {
+        return $this->create(new ArrayProcessor($delimiter));
+    }
 
+    public function createIntArrayLoader(string $delimiter = ArrayProcessor::DEFAULT_DELIMITER): Loader
+    {
+        return $this->create(new ArrayProcessor($delimiter, new ToIntProcessor()));
+    }
 
-
-	public function createBoolLoader() : Loader
-	{
-		return $this->create(new ToBoolProcessor());
-	}
-
-
-
-	public function createIntLoader() : Loader
-	{
-		return $this->create(new ToIntProcessor());
-	}
-
-
-
-	public function createFloatLoader() : Loader
-	{
-		return $this->create(new ToFloatProcessor());
-	}
-
-
-
-	public function createArrayLoader(string $delimiter = ArrayProcessor::DEFAULT_DELIMITER) : Loader
-	{
-		return $this->create(new ArrayProcessor($delimiter));
-	}
-
-
-
-	public function createIntArrayLoader(string $delimiter = ArrayProcessor::DEFAULT_DELIMITER) : Loader
-	{
-		return $this->create(new ArrayProcessor($delimiter, new ToIntProcessor()));
-	}
-
-
-
-	public function createFloatArrayLoader(string $delimiter = ArrayProcessor::DEFAULT_DELIMITER) : Loader
-	{
-		return $this->create(new ArrayProcessor($delimiter, new ToFloatProcessor()));
-	}
+    public function createFloatArrayLoader(string $delimiter = ArrayProcessor::DEFAULT_DELIMITER): Loader
+    {
+        return $this->create(new ArrayProcessor($delimiter, new ToFloatProcessor()));
+    }
 
 }

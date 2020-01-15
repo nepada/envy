@@ -8,20 +8,16 @@ use Nepada\Envy\ValueProviderInterface;
 use Nette\SmartObject;
 use Nette\Utils\Validators;
 
-
-
 final class ToFloatProcessor implements ProcessorInterface
 {
 
-	use SmartObject;
+    use SmartObject;
 
-
-
-	public function process(string $name, ValueProviderInterface $valueProvider) : float
-	{
-		$value = $valueProvider->get($name);
-		Validators::assert($value, 'numeric', $name);
-		return (float) $value;
-	}
+    public function process(string $name, ValueProviderInterface $valueProvider): float
+    {
+        $value = $valueProvider->get($name);
+        Validators::assert($value, 'numeric', $name);
+        return (float) $value;
+    }
 
 }

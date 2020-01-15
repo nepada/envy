@@ -1,46 +1,46 @@
 {
-	"name": "nepada/envy",
-	"type": "library",
-	"license": "BSD-3-Clause",
-	"description": "Helpers for extracting, validating and type-casting data from environment variables",
-	"keywords": ["nette", "env", "configuration"],
-	"support": {
-		"email": "petr@pada.cz",
-		"issues": "https://github.com/nepada/envy/issues"
-	},
-	"authors": [
-		{
-			"name": "Petr Morávek",
-			"email": "petr@pada.cz"
-		}
-	],
-	"require": {
-		"php": ">=7.3",
-		"nette/utils": "^2.5.4@dev || ^3.0@dev"
-	},
-	"require-dev": {
-		"nette/di": "^2.4.16@dev || ^3.0.1@dev",
-		"nette/bootstrap": "^2.4.6 || ^3.0",
-		"damejidlo/coding-standard": "^1.1",
-		"damejidlo/phpstan-nette-tester": "^0.1.0",
-		"jakub-onderka/php-parallel-lint": "^1.0",
-		"nette/tester": "^2.3",
-		"pepakriz/phpstan-exception-rules": "^0.8.1",
-		"phpstan/phpstan-nette": "^0.11",
-		"phpstan/phpstan-shim": "^0.11.19",
-		"phpstan/phpstan-strict-rules": "^0.11.1"
-	},
-	"suggest": {
-		"nette/di": "for integration with Nette DI container"
-	},
-	"autoload": {
-		"psr-4": {
-			"Nepada\\Envy\\": "src/"
-		}
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"NepadaTests\\": "tests/"
-		}
-	}
+    "name": "nepada/envy",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "description": "Helpers for extracting, validating and type-casting data from environment variables",
+    "keywords": ["nette", "env", "configuration"],
+    "support": {
+        "email": "petr@pada.cz",
+        "issues": "https://github.com/nepada/envy/issues"
+    },
+    "authors": [
+        {
+            "name": "Petr Morávek",
+            "email": "petr@pada.cz"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "nette/utils": "^2.5.4@dev || ^3.0@dev"
+    },
+    "require-dev": {
+        "nette/di": "^2.4.16@dev || ^3.0.1@dev",
+        "nette/bootstrap": "^2.4.6 || ^3.0",
+        "damejidlo/phpstan-nette-tester": "^0.1.0",
+        "jakub-onderka/php-parallel-lint": "^1.0",
+        "nepada/coding-standard": "^6.3.0",
+        "nette/tester": "^2.3",
+        "pepakriz/phpstan-exception-rules": "^0.8.1",
+        "phpstan/phpstan-nette": "^0.11",
+        "phpstan/phpstan-shim": "^0.11.19",
+        "phpstan/phpstan-strict-rules": "^0.11.1"
+    },
+    "suggest": {
+        "nette/di": "for integration with Nette DI container"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nepada\\Envy\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NepadaTests\\": "tests/"
+        }
+    }
 }

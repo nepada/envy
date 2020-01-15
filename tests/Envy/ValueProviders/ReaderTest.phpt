@@ -10,52 +10,44 @@ use Nepada\Envy\ValueProviders\Reader;
 use NepadaTests\TestCase;
 use Tester\Assert;
 
-
-
 /**
  * @testCase
  */
 class ReaderTest extends TestCase
 {
 
-	private const KNOWN = 'KNOWN';
-	private const UNKNOWN = 'UNKNOWN';
+    private const KNOWN = 'KNOWN';
+    private const UNKNOWN = 'UNKNOWN';
 
+    protected function setUp(): void
+    {
+        parent::setUp();
+        putenv('KNOWN=');
+        putenv('UNKNOWN');
+    }
 
+    public function testKnownEmptyValue(): void
+    {
+        $reader = new Reader();
 
-	protected function setUp() : void
-	{
-		parent::setUp();
-		putenv('KNOWN=');
-		putenv('UNKNOWN');
-	}
+        Assert::true($reader->exists(self::KNOWN));
+        Assert::same('', $reader->get(self::KNOWN));
+    }
 
+    public function testNotSetVariable(): void
+    {
+        $reader = new Reader();
 
+        Assert::false($reader->exists(self::UNKNOWN));
 
-	public function testKnownEmptyValue() : void
-	{
-		$reader = new Reader();
-
-		Assert::true($reader->exists(self::KNOWN));
-		Assert::same('', $reader->get(self::KNOWN));
-	}
-
-
-
-	public function testNotSetVariable() : void
-	{
-		$reader = new Reader();
-
-		Assert::false($reader->exists(self::UNKNOWN));
-
-		Assert::exception(
-			function () use ($reader) : void {
-				$reader->get(self::UNKNOWN);
-			},
-			EnvironmentVariableNotFoundException::class,
-			"Environment variable 'UNKNOWN' not found.",
-		);
-	}
+        Assert::exception(
+            function () use ($reader): void {
+                $reader->get(self::UNKNOWN);
+            },
+            EnvironmentVariableNotFoundException::class,
+            "Environment variable 'UNKNOWN' not found.",
+        );
+    }
 
 }
 
