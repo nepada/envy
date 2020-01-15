@@ -15,6 +15,7 @@ if (getenv('IS_PHPSTAN') !== FALSE) {
 // configure environment
 if (!$_ENV['IS_PHPSTAN']) {
 	Tester\Environment::setup();
+    date_default_timezone_set('Europe/Prague');
 }
 
 

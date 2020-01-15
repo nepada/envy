@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace NepadaTests\Envy;
+namespace NepadaTests;
 
 use Tester;
 

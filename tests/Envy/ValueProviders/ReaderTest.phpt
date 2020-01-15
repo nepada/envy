@@ -3,11 +3,11 @@ declare(strict_types = 1);
 
 namespace NepadaTests\Envy\ValueProviders;
 
-require_once __DIR__ . '/../bootstrap.php';
+require_once __DIR__ . '/../../bootstrap.php';
 
 use Nepada\Envy\EnvironmentVariableNotFoundException;
 use Nepada\Envy\ValueProviders\Reader;
-use NepadaTests\Envy\TestCase;
+use NepadaTests\TestCase;
 use Tester\Assert;
 
 

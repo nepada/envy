@@ -3,13 +3,13 @@ declare(strict_types = 1);
 
 namespace NepadaTests\Envy\Processors\TypeCasting;
 
-require_once __DIR__ . '/../../bootstrap.php';
+require_once __DIR__ . '/../../../bootstrap.php';
 
 use Nepada\Envy\Processors\TypeCasting\ArrayProcessor;
 use Nepada\Envy\Processors\TypeCasting\ToIntProcessor;
 use Nepada\Envy\ValueProviders\SingleValueProvider;
 use NepadaTests\Envy\Fixtures\IncrementProcessor;
-use NepadaTests\Envy\TestCase;
+use NepadaTests\TestCase;
 use Nette\Utils\AssertionException;
 use Tester\Assert;
 

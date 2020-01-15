@@ -3,7 +3,7 @@ declare(strict_types = 1);
 
 namespace NepadaTests\Envy\Processors;
 
-require_once __DIR__ . '/../bootstrap.php';
+require_once __DIR__ . '/../../bootstrap.php';
 
 use Nepada\Envy\EnvironmentVariableNotFoundException;
 use Nepada\Envy\Processors\MultiProcessor;
@@ -12,7 +12,7 @@ use Nepada\Envy\ValueProviderInterface;
 use Nepada\Envy\ValueProviders\SingleValueProvider;
 use NepadaTests\Envy\Fixtures\FailingValueProvider;
 use NepadaTests\Envy\Fixtures\IncrementProcessor;
-use NepadaTests\Envy\TestCase;
+use NepadaTests\TestCase;
 use Nette\Utils\AssertionException;
 use Tester\Assert;
 

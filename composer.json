@@ -40,7 +40,7 @@
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"NepadaTests\\Envy\\": "tests/"
+			"NepadaTests\\": "tests/"
 		}
 	}
 }

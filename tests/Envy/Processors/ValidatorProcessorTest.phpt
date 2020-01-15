@@ -3,11 +3,11 @@ declare(strict_types = 1);
 
 namespace NepadaTests\Envy\Processors;
 
-require_once __DIR__ . '/../bootstrap.php';
+require_once __DIR__ . '/../../bootstrap.php';
 
 use Nepada\Envy\Processors\ValidatorProcessor;
 use Nepada\Envy\ValueProviders\SingleValueProvider;
-use NepadaTests\Envy\TestCase;
+use NepadaTests\TestCase;
 use Nette\Utils\AssertionException;
 use Tester\Assert;
 

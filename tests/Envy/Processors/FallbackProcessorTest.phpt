@@ -3,13 +3,13 @@ declare(strict_types = 1);
 
 namespace NepadaTests\Envy\Processors;
 
-require_once __DIR__ . '/../bootstrap.php';
+require_once __DIR__ . '/../../bootstrap.php';
 
 use Nepada\Envy\Processors\FallbackProcessor;
 use Nepada\Envy\ValueProviders\SingleValueProvider;
 use NepadaTests\Envy\Fixtures\FailingValueProvider;
 use NepadaTests\Envy\Fixtures\TestException;
-use NepadaTests\Envy\TestCase;
+use NepadaTests\TestCase;
 use Tester\Assert;
 
 
