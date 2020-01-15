@@ -1,6 +1,5 @@
 language: php
 php:
-    - 7.3
     - 7.4
 
 env:
@@ -11,11 +10,11 @@ env:
 jobs:
     include:
         -   stage: Code Standard Checker
-            php: 7.3
+            php: 7.4
             script:
                 - vendor/bin/phpcs
         -   stage: Code Coverage
-            php: 7.3
+            php: 7.4
             script:
                 - vendor/bin/tester -s -p phpdbg -c tests/php.ini tests --coverage ./coverage.xml --coverage-src ./src
             after_script:
