@@ -28,7 +28,8 @@
         "pepakriz/phpstan-exception-rules": "^0.10.1",
         "phpstan/phpstan": "^0.12.5",
         "phpstan/phpstan-nette": "^0.12.3",
-        "phpstan/phpstan-strict-rules": "^0.12.1"
+        "phpstan/phpstan-strict-rules": "^0.12.1",
+        "spaze/phpstan-disallowed-calls": "^0.12.1"
     },
     "suggest": {
         "nette/di": "for integration with Nette DI container"
