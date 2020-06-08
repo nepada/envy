@@ -8,6 +8,7 @@ require_once __DIR__ . '/../../bootstrap.php';
 use Nepada\Envy\Envy;
 use Nepada\Envy\LoaderFactory;
 use Nepada\Envy\ValueProviders\Reader;
+use NepadaTests\Environment;
 use NepadaTests\TestCase;
 use Nette\Configurator;
 use Nette\DI\Container;
@@ -52,7 +53,7 @@ class EnvyExtensionTest extends TestCase
     {
         $configurator = new Configurator();
         $configurator->setDebugMode(false);
-        $configurator->setTempDirectory(TEMP_DIR);
+        $configurator->setTempDirectory(Environment::getTempDir());
         $configurator->addConfig(__DIR__ . '/config.neon');
 
         return $configurator->createContainer();
