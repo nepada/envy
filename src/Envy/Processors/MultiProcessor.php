@@ -12,7 +12,9 @@ final class MultiProcessor implements ProcessorInterface
 
     use SmartObject;
 
-    /** @var ProcessorInterface[] */
+    /**
+     * @var ProcessorInterface[]
+     */
     private array $processors;
 
     public function __construct(ProcessorInterface ...$processors)
@@ -64,7 +66,9 @@ final class MultiProcessor implements ProcessorInterface
 
             private ValueProviderInterface $valueProvider;
 
-            /** @var ProcessorInterface[] */
+            /**
+             * @var ProcessorInterface[]
+             */
             private array $processors;
 
             public function __construct(ValueProviderInterface $valueProvider, ProcessorInterface ...$processors)

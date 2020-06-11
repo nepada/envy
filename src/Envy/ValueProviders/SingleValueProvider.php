@@ -11,7 +11,9 @@ final class SingleValueProvider implements ValueProviderInterface
 
     use SmartObject;
 
-    /** @var mixed */
+    /**
+     * @var mixed
+     */
     private $value;
 
     /**

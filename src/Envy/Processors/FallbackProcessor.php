@@ -13,7 +13,9 @@ final class FallbackProcessor implements ProcessorInterface
 
     use SmartObject;
 
-    /** @var mixed */
+    /**
+     * @var mixed
+     */
     private $fallback;
 
     /**
