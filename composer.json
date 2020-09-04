@@ -29,7 +29,7 @@
         "phpstan/phpstan": "^0.12.26",
         "phpstan/phpstan-nette": "^0.12.6",
         "phpstan/phpstan-strict-rules": "^0.12.2",
-        "spaze/phpstan-disallowed-calls": "^0.12.1"
+        "spaze/phpstan-disallowed-calls": "^0.12.5",
     },
     "suggest": {
         "nette/di": "for integration with Nette DI container"
