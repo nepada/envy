@@ -8,13 +8,24 @@ includes:
     - tests/PHPStan/disallowedCalls.neon
 
 parameters:
-	level: max
-	paths:
-		- tests
+    level: max
+    paths:
+        - tests
 
-	fileExtensions:
-		- php
-		- phpt
+    fileExtensions:
+        - php
+        - phpt
 
-	excludes_analyse:
-		- tests/temp/*
+    excludes_analyse:
+        - tests/temp/*
+
+    ignoreErrors:
+        -
+            message: "#^Calling putenv\\(\\) is forbidden, might overwrite existing variables$#"
+            path: tests/Bridges/EnvyDI/EnvyExtensionTest.phpt
+        -
+            message: "#^Calling putenv\\(\\) is forbidden, might overwrite existing variables$#"
+            path: tests/Envy/EnvyTest.phpt
+        -
+            message: "#^Calling putenv\\(\\) is forbidden, might overwrite existing variables$#"
+            path: tests/Envy/ValueProviders/ReaderTest.phpt
