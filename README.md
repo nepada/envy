@@ -1,7 +1,7 @@
 Envy
 ====
 
-[![Build Status](https://travis-ci.org/nepada/envy.svg?branch=master)](https://travis-ci.org/nepada/envy)
+[![Build Status](https://github.com/nepada/envy/workflows/CI/badge.svg)](https://github.com/nepada/envy/actions?query=workflow%3ACI+branch%3Amaster)
 [![Coverage Status](https://coveralls.io/repos/github/nepada/envy/badge.svg?branch=master)](https://coveralls.io/github/nepada/envy?branch=master)
 [![Downloads this Month](https://img.shields.io/packagist/dm/nepada/envy.svg)](https://packagist.org/packages/nepada/envy)
 [![Latest stable](https://img.shields.io/packagist/v/nepada/envy.svg)](https://packagist.org/packages/nepada/envy)
