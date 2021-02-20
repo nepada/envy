@@ -12,3 +12,6 @@ updates:
     open-pull-requests-limit: 10
     allow:
       - dependency-type: "development"
+    ignore:
+      - dependency-name: "nette/bootstrap"
+      - dependency-name: "nette/di"
