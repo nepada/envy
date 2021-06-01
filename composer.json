@@ -23,7 +23,7 @@
         "nepada/coding-standard": "7.4.0",
         "nepada/phpstan-nette-tester": "0.3.1",
         "nette/tester": "2.4.0",
-        "pepakriz/phpstan-exception-rules": "0.11.6",
+        "pepakriz/phpstan-exception-rules": "0.11.7",
         "phpstan/phpstan": "0.12.88",
         "phpstan/phpstan-nette": "0.12.17",
         "phpstan/phpstan-strict-rules": "0.12.9",
